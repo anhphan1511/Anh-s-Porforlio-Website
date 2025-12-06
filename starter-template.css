@@ -1,17 +1,145 @@
+/* Overall page */
 body {
-    padding-top: 50px;
+  padding-top: 70px;              /* space for fixed navbar */
+  background-color: #f7f4ff;      /* soft lavender */
+  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
 }
 
+/* Navbar */
+.navbar-inverse {
+  background-color: #6f4bb8;   /* main purple */
+  border-color: #5d3fa0;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #ffe6ff;
+}
+
+/* Hero section (name + headline) */
 .starter-template {
-  padding: 40px 15px;
+  padding: 80px 15px 40px;
   text-align: center;
 }
 
-hr { margin: 20px 0 20px 0; }
+.starter-template h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
 
-.center-block {  
-    width:640px;
-  display: block;  
-  margin-right: auto;  
-  margin-left: auto;  
-}  
+.starter-template .lead {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Horizontal rule spacing */
+hr {
+  margin: 30px 0;
+  border-color: #e3dbff;
+}
+
+/* Centered block for headshot & intro */
+.center-block {
+  max-width: 640px;
+  width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+/* Profile picture */
+.img-rounded {
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  border: 3px solid #fce4ff;
+}
+
+/* Section titles */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #6f4bb8;
+  font-weight: 600;
+}
+
+/* Subsection titles */
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3a3058;
+}
+
+/* Paragraphs & list items */
+p,
+li {
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Make columns look like cards (projects, experience, skills) */
+.row [class*="col-md-"] {
+  margin-bottom: 20px;
+}
+
+.row [class*="col-md-"] > h3,
+.row [class*="col-md-"] > p,
+.row [class*="col-md-"] > ul {
+  background: #ffffff;
+  padding: 16px 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+/* Remove double padding for simple text-only sections */
+#intro p {
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Links */
+a {
+  color: #6f4bb8;
+}
+
+a:hover {
+  color: #b18cf4;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  color: #777;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .starter-template {
+    padding-top: 60px;
+  }
+
+  .starter-template h1 {
+    font-size: 32px;
+  }
+
+  .center-block {
+    padding: 0 15px;
+  }
+
+  .row [class*="col-md-"] > h3,
+  .row [class*="col-md-"] > p,
+  .row [class*="col-md-"] > ul {
+    padding: 14px 15px;
+  }
+}
