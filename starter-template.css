@@ -1,16 +1,21 @@
-/* Overall page */
+/* ===== Global ===== */
 body {
-  padding-top: 70px;              /* space for fixed navbar */
-  background-color: #f7f4ff;      /* soft lavender */
-  color: #222;
+  padding-top: 70px; /* space for fixed navbar */
+  background-color: #f4f8fc;   /* soft pastel blue background */
+  color: #1f2a3a;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Navbar */
+/* Container width a bit narrower for a “CV” feel */
+.container {
+  max-width: 960px;
+}
+
+/* ===== Navbar ===== */
 .navbar-inverse {
-  background-color: #6f4bb8;   /* main purple */
-  border-color: #5d3fa0;
+  background-color: #3b6fa6;   /* professional blue */
+  border-color: #305e8d;
 }
 
 .navbar-inverse .navbar-brand,
@@ -21,33 +26,34 @@ body {
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-nav > li > a:hover {
-  color: #ffe6ff;
+  color: #e2f0ff;
 }
 
-/* Hero section (name + headline) */
+/* ===== Hero / Name block ===== */
 .starter-template {
-  padding: 80px 15px 40px;
+  padding: 70px 15px 40px;
   text-align: center;
 }
 
 .starter-template h1 {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.03em;
+  color: #23405f;
 }
 
 .starter-template .lead {
-  font-size: 18px;
-  color: #555;
+  font-size: 17px;
+  color: #45566c;
 }
 
-/* Horizontal rule spacing */
+/* ===== Horizontal lines ===== */
 hr {
-  margin: 30px 0;
-  border-color: #e3dbff;
+  margin: 32px 0;
+  border-color: #d3e2f5;
 }
 
-/* Centered block for headshot & intro */
+/* ===== Centered headshot block ===== */
 .center-block {
   max-width: 640px;
   width: 100%;
@@ -57,39 +63,39 @@ hr {
   text-align: center;
 }
 
-/* Profile picture */
+/* Profile picture: clean, not playful */
 .img-rounded {
   border-radius: 50%;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-  border: 3px solid #fce4ff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  border: 3px solid #e6f0ff;
 }
 
-/* Section titles */
+/* ===== Headings ===== */
 h2 {
   text-align: center;
-  font-size: 28px;
-  margin-bottom: 15px;
-  color: #6f4bb8;
+  font-size: 26px;
+  margin-bottom: 16px;
+  color: #2a5079;
   font-weight: 600;
 }
 
-/* Subsection titles */
 h3 {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
-  color: #3a3058;
+  color: #23405f;
 }
 
-/* Paragraphs & list items */
+/* ===== Text ===== */
 p,
 li {
-  line-height: 1.6;
+  line-height: 1.65;
   font-size: 15px;
+  color: #2b3645;
 }
 
-/* Make columns look like cards (projects, experience, skills) */
+/* ===== Card-style sections (projects, experience, skills) ===== */
 .row [class*="col-md-"] {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .row [class*="col-md-"] > h3,
@@ -97,40 +103,50 @@ li {
 .row [class*="col-md-"] > ul {
   background: #ffffff;
   padding: 16px 18px;
-  border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(26, 47, 77, 0.08);
 }
 
-/* Remove double padding for simple text-only sections */
+/* Keep About section paragraphs simple (no card) */
 #intro p {
   background: transparent;
   padding: 0;
   box-shadow: none;
 }
 
-/* Links */
+/* ===== Links ===== */
 a {
-  color: #6f4bb8;
-}
-
-a:hover {
-  color: #b18cf4;
+  color: #3b6fa6;
   text-decoration: none;
 }
 
-/* Footer */
-footer {
-  color: #777;
+a:hover {
+  color: #28527a;
+  text-decoration: underline;
 }
 
-/* Mobile tweaks */
+/* ===== Footer ===== */
+footer {
+  color: #6b7685;
+}
+
+/* ===== Small hover polish for cards ===== */
+.row [class*="col-md-"] > h3:hover,
+.row [class*="col-md-"] > p:hover,
+.row [class*="col-md-"] > ul:hover {
+  box-shadow: 0 5px 18px rgba(26, 47, 77, 0.12);
+  transform: translateY(-2px);
+  transition: all 0.18s ease-out;
+}
+
+/* ===== Mobile tweaks ===== */
 @media (max-width: 768px) {
   .starter-template {
     padding-top: 60px;
   }
 
   .starter-template h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .center-block {
